@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MyFirstSuite" parallel= "classes">
+	<test thread-count="2" name="Test">
+		<parameter name="username" value="admin"/>
+        <parameter name="password" value="password"/>
+        <groups>
+			<run>
+			<!-- Activity 5  -->
+			<!--Run only the tests that are in the HeaderTests group /> -->
+			<!--<include name="HeaderTests" />  -->	
+			<!--Run only the tests that are in the ButtonTests group /> -->
+			<!-- <include name= "ButtonTests"/> -->	
+			<!-- Exclude the tests that are in the HeaderTests group. -->
+				<!--<exclude name="HeaderTests" /> -->
+			</run>
+		</groups>
+		<classes>
+			<class name="activities.Activity1" />
+			<class name="activities.Activity2" />
+			<class name="activities.Activity3" />
+			<class name="activities.Activity4" />
+			<class name="activities.DemoTwo" />
+			<class name="activities.Activity5" />
+			<class name="activities.Activity6" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

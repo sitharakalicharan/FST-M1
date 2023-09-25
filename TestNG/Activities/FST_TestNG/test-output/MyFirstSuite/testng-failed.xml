@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [MyFirstSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <groups>
+      <run>
+        <include name="HeaderTests"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="activities.Activity5">
+        <methods>
+          <include name="HeaderTest2"/>
+          <include name="pageTitleTest"/>
+          <include name="HeaderTest1"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- activities.Activity5 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [MyFirstSuite] -->
